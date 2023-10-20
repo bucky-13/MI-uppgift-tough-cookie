@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tough Cookie Restaurant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Roboto+Condensed:wght@300;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
   </head>
   <body>
@@ -11,7 +17,7 @@
       <header>
         <nav>
           <h1>Tough Cookie</h1>
-          <ul>
+          <ul class="menu">
             <li><a href="#home-section">Home</a></li>
             <li><a href="#menu-section">Menu</a></li>
             <li><a href="#book-table-section">Book Table</a></li>
@@ -20,36 +26,53 @@
       </header>
       <!-- ******************************HOME SECTION*************************************** -->
       <main>
-        <section id="home-section">
-          <div>
-            <h2>Drizzle <span>Tahini</span> <span>Chickpeas</span></h2>
+        <section id="home-section" class="home-section">
+          <div class="drizzle-container">
+            <h2 class="drizzle-h2">
+              <span class="drizzle-span">Drizzle</span>
+              <span class="tahini-span">Tahini</span>
+              <span class="chickpeas-span">Chickpeas</span>
+            </h2>
           </div>
-          <article>
+          <article class="home-text-top">
             Main course hemp seeds Southern Italian shiitake mushrooms a
             delicious meal banana bread lemon tahini dressing apple vinaigrette
             veggie burgers cool cucumbers coconut sugar. Seasonal edamame hummus
             asian pear kale bite sized ghost pepper one bowl mediterranean
             luxury bowl cayenne Thai sun pepper.
           </article>
-          <figure>
+          <figure class="home-image-container">
             <img
+              class="cabbage-img"
               src="/assets/photos/green-cabbage-vegetable.jpg"
               alt="a delicious cabbage vegetable with black background"
               height="640"
               width="800"
             />
-            <img src="/assets/icons/arrow.svg" height="50" width="50" />
+            <img
+              class="cabbage-arrow"
+              src="/assets/icons/arrow.svg"
+              height="50"
+              width="50"
+            />
           </figure>
 
-          <article>
+          <article class="home-text-bottom">
             <p>
               Crispy iceberg lettuce Caribbean red habanero blueberry chia seed
               jam overflowing berries roasted butternut squash basmati thyme
               hummus falafel bowl cozy butternut cilantro lime vinaigrette heat
               mint potato chocolate cookie seeds samosa walnut mushroom tart.
             </p>
-            <p>Explore Menu</p>
-            <img src="/assets/icons/arrow2.svg" height="50" width="50" />
+            <div class="explore-menu-section">
+              <p class="explore-menu-text">Explore Menu</p>
+              <img
+                class="explore-arrow"
+                src="/assets/icons/arrow2.svg"
+                height="25"
+                width="25"
+              />
+            </div>
           </article>
         </section>
         <!-- ******************************MENU SECTION*************************************** -->

@@ -1,3 +1,128 @@
+@use "_normalize";
+
+$client-green-color: #00ff38;
+$client-yellow-color: #fff236;
+$client-purple-color: #aa75ff;
+$font-jockey-one: "Jockey One", sans-serif;
+$font-roboto-condesed: "Roboto Condensed", sans-serif;
+
+$border-yellow: 1rem $client-yellow-color solid;
+
 body {
-  background-color: yellow;
+  background-color: $client-yellow-color;
+  font-family: $font-jockey-one;
+  font-size: 1.5rem;
+  position: relative;
+
+  header {
+    background-color: black;
+    height: 80px;
+    border-left: $border-yellow;
+    border-right: $border-yellow;
+    position: sticky;
+    top: 0px;
+
+    z-index: 999;
+
+    h1 {
+      color: white;
+      margin: 0 0 0 2rem;
+      font-weight: 500;
+    }
+
+    .menu {
+      display: none;
+    }
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .home-section {
+      background-color: black;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-left: $border-yellow;
+      border-right: $border-yellow;
+
+      .drizzle-container {
+        margin: 2rem 0;
+
+        .drizzle-h2 {
+          font-weight: 900;
+          text-transform: uppercase;
+          text-align: right;
+          margin: 0;
+          color: $client-purple-color;
+          span {
+            display: block;
+          }
+          .drizzle-span {
+            font-size: 2.8rem;
+            margin-bottom: -2rem;
+          }
+          .tahini-span {
+            font-size: 7rem;
+            color: $client-green-color;
+            z-index: 1;
+            position: relative;
+          }
+          .chickpeas-span {
+            font-size: 2.7rem;
+            margin-left: 15px;
+            text-align: left;
+            margin-top: -2.25rem;
+            color: $client-yellow-color;
+          }
+        }
+      }
+
+      .home-text-top {
+        color: $client-green-color;
+        padding: 0 2rem;
+      }
+
+      .home-image-container {
+        width: 100%;
+        margin-bottom: -50px;
+
+        .cabbage-img {
+          width: 100%;
+          height: 100%;
+        }
+        .cabbage-arrow {
+          position: relative;
+          left: 7%;
+          bottom: 5rem;
+          transform: rotate(90deg);
+        }
+      }
+
+      .home-text-bottom {
+        background-color: white;
+        color: $client-purple-color;
+        padding: 0 2rem;
+
+        .explore-menu-section {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          .explore-menu-text {
+            color: black;
+            text-transform: uppercase;
+            font-size: 2rem;
+          }
+
+          .explore-arrow {
+            margin-left: 0.5rem;
+          }
+        }
+      }
+    }
+  }
 }
