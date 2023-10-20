@@ -17,16 +17,16 @@
       <header>
         <nav>
           <h1>Tough Cookie</h1>
-          <ul class="menu">
-            <li><a href="#home-section">Home</a></li>
-            <li><a href="#menu-section">Menu</a></li>
-            <li><a href="#book-table-section">Book Table</a></li>
+          <ul class="nav-menu">
+            <li><a href="#home-section-anchor">Home</a></li>
+            <li><a href="#menu-section-anchor">Menu</a></li>
+            <li><a href="#book-table-section-anchor">Book Table</a></li>
           </ul>
         </nav>
       </header>
       <!-- ******************************HOME SECTION*************************************** -->
       <main>
-        <section id="home-section" class="home-section">
+        <section id="home-section-anchor" class="home-section">
           <div class="drizzle-container">
             <h2 class="drizzle-h2">
               <span class="drizzle-span">Drizzle</span>
@@ -76,7 +76,7 @@
           </article>
         </section>
         <!-- ******************************MENU SECTION*************************************** -->
-        <section id="menu-section">
+        <section id="menu-section-anchor" class="menu-section">
           <h2 class="visually-hidden">Menu</h2>
           <figure>
             <img
@@ -103,91 +103,118 @@
             />
           </figure>
           <div class="menu-item">
-            <h3>Halloumi Moklieh <span class="new-dish">New!</span></h3>
-            <p>Deep-fried halloumi</p>
-            <p>195 kr</p>
+            <h3>
+              Halloumi Moklieh
+              <div class="new-dish"><span>New!</span></div>
+            </h3>
+            <p class="menu-item-description">Deep-fried halloumi</p>
+            <p class="menu-item-price">195 kr</p>
           </div>
           <div class="menu-item">
             <h3>Mojaddara</h3>
-            <p>Green lentis with rice and fried onion</p>
-            <p>135 kr</p>
+            <p class="menu-item-description">
+              Green lentis with rice and fried onion
+            </p>
+            <p class="menu-item-price">135 kr</p>
           </div>
           <div class="menu-item">
             <h3>Chiar & Laban</h3>
-            <p>Lebanese spicy yoghurt with chopped cucumber</p>
-            <p>95 kr</p>
+            <p class="menu-item-description">
+              Lebanese spicy yoghurt with chopped cucumber
+            </p>
+            <p class="menu-item-price">95 kr</p>
           </div>
           <div class="menu-item">
             <h3>Warak Inab</h3>
-            <p>Rice- and veggie-filled dolma with mint and lemon</p>
-            <p>85 kr</p>
+            <p class="menu-item-description">
+              Rice- and veggie-filled dolma with mint and lemon
+            </p>
+            <p class="menu-item-price">85 kr</p>
           </div>
           <div class="menu-item">
-            <h3>Moutabbal Batinzian <span class="vegan-dish">Vegan</span></h3>
-            <p>Smoked chopped aubergine, sesame paste, garlic and lemon</p>
-            <p>175 kr</p>
+            <h3>
+              Moutabbal Batinzian
+              <div class="vegan-dish"><span>Vegan</span></div>
+            </h3>
+            <p class="menu-item-description">
+              Smoked chopped aubergine, sesame paste, garlic and lemon
+            </p>
+            <p class="menu-item-price">175 kr</p>
           </div>
           <div class="menu-item">
-            <h3>Ardishoki <span class="popular-dish">Popular</span></h3>
-            <p>Artichoke with lemon and garlic marinade</p>
-            <p>99 kr</p>
+            <h3>
+              Ardishoki
+              <div class="popular-dish"><span>Popular</span></div>
+            </h3>
+            <p class="menu-item-description">
+              Artichoke with lemon and garlic marinade
+            </p>
+            <p class="menu-item-price">99 kr</p>
           </div>
           <div class="menu-item">
             <h3>Mhamara</h3>
-            <p>
+            <p class="menu-item-description">
               Spicy bell pepper relish with crushed walnuts and pomegranate
               syrup
             </p>
-            <p>123 kr</p>
+            <p class="menu-item-price">123 kr</p>
           </div>
         </section>
         <!-- ******************************BOOKING SECTION************************************* -->
-        <section id="book-table-section">
+        <section id="book-table-section-anchor" class="book-table-section">
           <figure>
             <img
+              class="form-img"
               src="/assets/photos/tough-cookie-restaurant.jpg"
               alt="a table in our beautiful restaurant"
               height="534"
               width="800"
             />
+            <div class="contact-information">
+              <p>+46 8 123 45 67</p>
+              <p>book@toughcookie.com</p>
+              <p>Brända Tomten 11131 Stockholm</p>
+            </div>
           </figure>
           <article>
-            <form action="#" class="booking-request">
+            <form action="#" class="booking-request-form">
               <h2>Book your table</h2>
               <label>
                 <span>Name</span>
-                <input type="text" />
+                <input class="user-input" type="text" />
               </label>
               <label>
                 <span>Email</span>
-                <input type="email" />
+                <input class="user-input" type="email" />
               </label>
               <label>
                 <span>Phone</span>
-                <input type="tel" />
+                <input class="user-input" type="tel" />
               </label>
               <label>
                 <span>Date</span>
-                <input type="date" />
+                <input class="user-input" type="date" />
               </label>
               <label>
                 <span>Party Size</span>
-                <input type="number" />
+                <input class="user-input" type="number" />
               </label>
               <label>
                 <span>Allergies</span>
-                <input type="text" />
+                <input class="user-input" type="text" />
               </label>
-              <input type="reset" value="Cancel" />
-              <input type="submit" value="Request" />
+              <div class="form-button-container">
+                <input class="btn btn-purple" type="reset" value="Cancel" />
+                <input class="btn btn-yellow" type="submit" value="Request" />
+              </div>
             </form>
           </article>
         </section>
       </main>
       <footer>
         <p>You should accept cookies</p>
-        <button>Decline</button>
-        <button>Accept</button>
+        <button class="btn">Decline</button>
+        <button class="btn">Accept</button>
       </footer>
     </div>
   </body>
