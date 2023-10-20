@@ -17,6 +17,16 @@ $border-yellow: 1rem $client-yellow-color solid;
   font-size: 2rem;
 }
 
+.btn-yellow {
+  background-color: $client-yellow-color;
+}
+.btn-purple {
+  background-color: $client-purple-color;
+}
+.btn-green {
+  background-color: $client-green-color;
+}
+
 body {
   background-color: $client-yellow-color;
   font-family: $font-jockey-one;
@@ -327,12 +337,29 @@ body {
         gap: 20px;
         margin-top: 1rem;
       }
-      .btn-yellow {
-        background-color: $client-yellow-color;
-      }
-      .btn-purple {
-        background-color: $client-purple-color;
-      }
+    }
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    background-color: $client-purple-color;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    p {
+      color: white;
+      font-family: $font-roboto-condesed;
+      font-size: 1.3rem;
+      font-weight: 500;
+    }
+
+    button {
+      width: 130px;
+      margin: 0 0.3rem;
     }
   }
 }
