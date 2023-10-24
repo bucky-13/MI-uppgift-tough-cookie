@@ -14,4 +14,5 @@ cookiesNo.addEventListener("click", () => {
 });
 cookiesYes.addEventListener("click", () => {
   footer.classList.toggle("footer-closed");
+  console.log("Now that's a Tough Cookie :-)");
 });

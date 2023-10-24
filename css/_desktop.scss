@@ -1,0 +1,17 @@
+@media (min-width: 1260px) {
+  body {
+    .grid-menu-main {
+      gap: 16px;
+      max-width: 1600px;
+      header {
+        nav {
+        }
+      }
+      main {
+        .home-section {
+          gap: 16px;
+        }
+      }
+    }
+  }
+}
