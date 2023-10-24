@@ -35,28 +35,26 @@
           display: grid;
           grid-template-columns: repeat(11, 1fr);
           grid-template-rows: repeat(2, auto);
-          border: 1px solid red;
           gap: 12px;
-
           justify-content: start;
           align-content: start;
+          padding-top: 4rem;
+          border-left: none;
 
           .drizzle-container {
-            border: 1px solid blue;
             grid-column: 1 / span 5;
-            max-width: 500px;
+            max-width: 300px;
             margin-bottom: 0;
           }
 
           .home-text-top {
-            border: 1px solid green;
             grid-column: 6 / span 7;
-            font-size: 2rem;
+            padding: 0 1rem;
+            // font-size: 2rem;
           }
 
           .home-image-container {
-            border: 1px solid pink;
-            grid-column: 1 / span 6;
+            grid-column: 1 / span 5;
             margin-bottom: 0;
             margin-block-start: 0em;
             margin-block-end: 0em;
@@ -64,9 +62,9 @@
             margin-inline-end: 0px;
           }
           .home-text-bottom {
-            border: 1px solid orange;
-            grid-column: 7 / span 6;
-            font-size: 2rem;
+            grid-column: 6 / span 7;
+            padding: 0 1rem;
+            // font-size: 2rem;
           }
         }
       }

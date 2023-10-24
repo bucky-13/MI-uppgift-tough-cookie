@@ -152,6 +152,7 @@ body {
 
       .drizzle-container {
         margin: 2rem 0;
+        justify-self: right;
 
         .drizzle-h2 {
           font-weight: 900;
@@ -159,6 +160,7 @@ body {
           text-align: right;
           margin: 0;
           color: $color-client-purple;
+
           span {
             display: block;
           }
@@ -174,8 +176,8 @@ body {
           }
           .chickpeas-span {
             font-size: 2.7rem;
-            margin-left: 15px;
-            text-align: left;
+            margin-right: 100px;
+            // text-align: left;
             margin-top: -2.25rem;
             color: $color-client-yellow;
           }
@@ -189,22 +191,22 @@ body {
 
       .home-image-container {
         width: 100%;
-        margin-bottom: -50px;
+
+        position: relative;
 
         .cabbage-img {
           width: 100%;
           height: 100%;
-          max-width: 600px;
         }
         .cabbage-arrow {
-          position: relative;
+          position: absolute;
           left: 7%;
-          bottom: 5rem;
+          bottom: 2rem;
           transform: rotate(90deg);
           transition: bottom 0.3s;
         }
         .cabbage-arrow:hover {
-          bottom: 4.5rem;
+          bottom: 1rem;
         }
       }
 
@@ -217,6 +219,7 @@ body {
           display: flex;
           flex-direction: row;
           align-items: center;
+          margin-top: -2.1em;
 
           .explore-menu-text {
             color: black;
@@ -239,7 +242,7 @@ body {
     border-left: $border-yellow;
     border-right: $border-yellow;
     min-height: calc(100vh - 80px);
-    margin-bottom: 10rem;
+    margin: 10rem 0;
 
     :nth-child(2) {
       order: 1;
