@@ -89,6 +89,11 @@ body {
 
         li {
           margin: 3rem 0;
+          transition: margin-left 0.5s;
+        }
+
+        li:hover {
+          margin-left: 1rem;
         }
 
         a {
@@ -197,6 +202,10 @@ body {
           left: 7%;
           bottom: 5rem;
           transform: rotate(90deg);
+          transition: bottom 0.3s;
+        }
+        .cabbage-arrow:hover {
+          bottom: 4.5rem;
         }
       }
 
@@ -406,6 +415,10 @@ body {
     }
   }
 
+  .footer-closed {
+    display: none;
+  }
+
   footer {
     position: fixed;
     bottom: 0;
@@ -417,6 +430,7 @@ body {
     justify-content: space-around;
     align-items: center;
     padding: 1rem;
+    z-index: 3;
 
     p {
       color: white;
