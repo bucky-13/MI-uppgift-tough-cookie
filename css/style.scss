@@ -1,13 +1,13 @@
 @use "_normalize";
 
-$client-green-color: #00ff38;
-$client-yellow-color: #fff236;
-$client-purple-color: #aa75ff;
-$client-blue-color: #62a5cf;
+$color-client-green: #00ff38;
+$color-client-yellow: #fff236;
+$color-client-purple: #aa75ff;
+$color-client-blue: #62a5cf;
 $font-jockey-one: "Jockey One", sans-serif;
 $font-roboto-condesed: "Roboto Condensed", sans-serif;
 
-$border-yellow: 1rem $client-yellow-color solid;
+$border-yellow: 1rem $color-client-yellow solid;
 
 .btn {
   border: none;
@@ -18,17 +18,17 @@ $border-yellow: 1rem $client-yellow-color solid;
 }
 
 .btn-yellow {
-  background-color: $client-yellow-color;
+  background-color: $color-client-yellow;
 }
 .btn-purple {
-  background-color: $client-purple-color;
+  background-color: $color-client-purple;
 }
 .btn-green {
-  background-color: $client-green-color;
+  background-color: $color-client-green;
 }
 
 body {
-  background-color: $client-yellow-color;
+  background-color: $color-client-yellow;
   font-family: $font-jockey-one;
   font-size: 1.5rem;
   position: relative;
@@ -45,22 +45,88 @@ body {
 
   header {
     background-color: black;
-    height: 80px;
-    border-left: $border-yellow;
-    border-right: $border-yellow;
+    height: 100px;
     position: sticky;
     top: 0px;
+    z-index: 2;
 
-    z-index: 999;
+    nav {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      // padding: 1rem;
 
-    h1 {
-      color: white;
-      margin: 0 0 0 2rem;
-      font-weight: 500;
-    }
+      h1 {
+        color: white;
+        margin: 0;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 4rem;
+        line-height: 0rem;
+        padding: 1rem;
+      }
 
-    .nav-menu {
-      display: none;
+      .nav-menu {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+      }
+      .nav-menu-open {
+        background-color: $color-client-purple;
+        height: 100vh;
+        width: 100vh;
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        margin: 0;
+        padding-inline-start: 0;
+        opacity: 100;
+        visibility: visible;
+
+        li {
+          margin: 3rem 0;
+        }
+
+        a {
+          text-decoration: none;
+          color: white;
+          text-transform: uppercase;
+          font-size: 4rem;
+        }
+      }
+      #hamburger-btn {
+        background-color: black;
+        border: none;
+        padding: 1rem;
+
+        .bar {
+          display: block;
+          width: 48px;
+          height: 8px;
+          margin: 8px 0;
+          transition: all 0.3s ease;
+          border-radius: 2px;
+          background-color: $color-client-yellow;
+        }
+      }
+
+      #hamburger-btn.active .bar:nth-child(2) {
+        opacity: 0;
+      }
+      #hamburger-btn.active .bar:nth-child(1) {
+        transform: translateY(16px) rotate(45deg);
+      }
+      #hamburger-btn.active .bar:nth-child(3) {
+        transform: translateY(-16px) rotate(-45deg);
+      }
+
+      #hamburger-btn:hover span {
+        background-color: white;
+      }
     }
   }
 
@@ -88,7 +154,7 @@ body {
           text-transform: uppercase;
           text-align: right;
           margin: 0;
-          color: $client-purple-color;
+          color: $color-client-purple;
           span {
             display: block;
           }
@@ -98,7 +164,7 @@ body {
           }
           .tahini-span {
             font-size: 7rem;
-            color: $client-green-color;
+            color: $color-client-green;
             z-index: 1;
             position: relative;
           }
@@ -107,13 +173,13 @@ body {
             margin-left: 15px;
             text-align: left;
             margin-top: -2.25rem;
-            color: $client-yellow-color;
+            color: $color-client-yellow;
           }
         }
       }
 
       .home-text-top {
-        color: $client-green-color;
+        color: $color-client-green;
         padding: 0 2rem;
       }
 
@@ -136,7 +202,7 @@ body {
 
       .home-text-bottom {
         background-color: white;
-        color: $client-purple-color;
+        color: $color-client-purple;
         padding: 0 2rem;
 
         .explore-menu-section {
@@ -228,7 +294,7 @@ body {
         }
 
         .new-dish {
-          background-color: $client-purple-color;
+          background-color: $color-client-purple;
           padding: 2px 16px;
           transform: rotate(2deg);
           margin: 0 auto;
@@ -238,7 +304,7 @@ body {
           }
         }
         .vegan-dish {
-          background-color: $client-green-color;
+          background-color: $color-client-green;
           padding: 2px 12px;
           transform: rotate(-4deg);
           margin: 0 auto;
@@ -248,7 +314,7 @@ body {
           }
         }
         .popular-dish {
-          background-color: $client-yellow-color;
+          background-color: $color-client-yellow;
           padding: 1px 4px;
           transform: rotate(-1deg);
           margin: 0 auto;
@@ -273,14 +339,14 @@ body {
 
   .book-table-section {
     min-height: calc(100vh - 80px);
-    background-color: $client-green-color;
+    background-color: $color-client-green;
 
     figure {
       margin: 0;
       width: 100%;
       position: relative;
       text-align: left;
-      color: $client-blue-color;
+      color: $color-client-blue;
 
       .form-img {
         width: 100%;
@@ -343,18 +409,23 @@ body {
   footer {
     position: fixed;
     bottom: 0;
-    background-color: $client-purple-color;
+    background-color: $color-client-purple;
     width: 100%;
-    height: 100px;
+    height: 120px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    padding: 1rem;
 
     p {
       color: white;
       font-family: $font-roboto-condesed;
       font-size: 1.3rem;
       font-weight: 500;
+    }
+    div {
+      padding: 0 1rem;
     }
 
     button {
