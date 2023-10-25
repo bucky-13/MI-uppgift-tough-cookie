@@ -4,11 +4,12 @@ body {
   overflow-x: hidden;
   .grid-menu-main {
     display: grid;
-    grid-template-columns: 100px auto;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
     gap: 12px;
 
     header {
       height: 100vh;
+      grid-column: 1 / span 1;
       nav {
         display: flex;
         flex-direction: column;
@@ -21,14 +22,15 @@ body {
         }
         .nav-menu-open {
           top: 0;
-          left: 100px;
-          width: calc(100vw - 100px);
+          left: calc(16.667vw - 16px);
+          width: calc(83.333vw + 16px);
         }
       }
     }
 
     main {
       display: block;
+      grid-column: 2 / span 6;
 
       .home-section {
         display: grid;
@@ -66,6 +68,10 @@ body {
           // font-size: 2rem;
         }
       }
+    }
+
+    .menu-section {
+      border: none;
     }
   }
 }
