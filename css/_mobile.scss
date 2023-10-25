@@ -1,16 +1,10 @@
-$color-client-green: #00ff38;
-$color-client-yellow: #fff236;
-$color-client-purple: #aa75ff;
-$color-client-blue: #62a5cf;
-$font-jockey-one: "Jockey One", sans-serif;
-$font-roboto-condesed: "Roboto Condensed", sans-serif;
-$border-yellow: 1rem $color-client-yellow solid;
+@import url(variables);
 
 .btn {
   border: none;
   border-radius: 10px;
   padding: 3px 0;
-  text-transform: uppercase;
+
   font-size: 2rem;
 }
 
@@ -27,6 +21,7 @@ $border-yellow: 1rem $color-client-yellow solid;
 body {
   background-color: $color-client-yellow;
   font-family: $font-jockey-one;
+  text-transform: uppercase;
   font-size: 1.5rem;
   position: relative;
 
@@ -58,7 +53,7 @@ body {
         color: white;
         margin: 0;
         font-weight: 500;
-        text-transform: uppercase;
+
         font-size: 3rem;
         line-height: 0rem;
         padding: 1rem;
@@ -98,7 +93,7 @@ body {
         a {
           text-decoration: none;
           color: white;
-          text-transform: uppercase;
+
           font-size: 4rem;
         }
       }
@@ -156,7 +151,7 @@ body {
 
         .drizzle-h2 {
           font-weight: 900;
-          text-transform: uppercase;
+
           text-align: right;
           margin: 0;
           color: $color-client-purple;
@@ -223,7 +218,7 @@ body {
 
           .explore-menu-text {
             color: black;
-            text-transform: uppercase;
+
             font-size: 2rem;
           }
 
@@ -290,7 +285,6 @@ body {
 
       h3 {
         line-height: 1rem;
-        text-transform: uppercase;
         font-weight: 500;
         font-size: 2.3rem;
         margin: 1rem 0;
@@ -337,6 +331,7 @@ body {
       }
       .menu-item-description {
         font-family: $font-roboto-condesed;
+        text-transform: none;
         margin: 1.3rem 0;
       }
       .menu-item-price {
@@ -350,19 +345,25 @@ body {
 
   .book-table-section {
     min-height: calc(100vh - 80px);
+    width: calc(100% - 2rem);
     background-color: $color-client-green;
-    padding-bottom: 120px;
+    padding-bottom: 200px;
+    border-left: 1rem white solid;
+    border-right: 1rem white solid;
 
-    figure {
-      margin: 0;
-      width: 100%;
+    .contact-container {
+      width: calc(100% - 4rem);
+      // max-width: 600px;
+      aspect-ratio: 1 / 1;
       position: relative;
-      text-align: left;
-      color: $color-client-blue;
+      padding: 2rem;
 
-      .form-img {
+      .contact-image {
         width: 100%;
         height: 100%;
+        background-image: url("/assets/photos/tough-cookie-restaurant.jpg");
+        background-size: cover;
+        background-position: center;
         filter: blur(3px) brightness(1.2);
       }
 
@@ -371,10 +372,11 @@ body {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        p {
-          font-size: 2rem;
-          filter: drop-shadow(-2px -2px 1px black);
-        }
+        color: $color-client-blue;
+        text-transform: none;
+        text-align: left;
+        font-size: 2rem;
+        filter: drop-shadow(-2px -2px 1px black);
       }
     }
     .booking-request-form {
@@ -385,13 +387,11 @@ body {
       margin: 0 2rem;
 
       h2 {
-        text-transform: uppercase;
         font-size: 3rem;
         font-weight: 500;
       }
 
       label span {
-        text-transform: uppercase;
         font-size: 1.8rem;
       }
 
@@ -403,6 +403,7 @@ body {
 
       .user-input {
         font-family: $font-roboto-condesed;
+        text-transform: none;
         padding: 6px;
         border: none;
         border-radius: 5px;
@@ -438,6 +439,7 @@ body {
     p {
       color: white;
       font-family: $font-roboto-condesed;
+      text-transform: none;
       font-size: 1.3rem;
       font-weight: 500;
     }

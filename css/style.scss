@@ -1,4 +1,10 @@
-@use "_normalize";
-@use "_mobile";
-@use "_tablet";
-@use "_desktop";
+@import "normalize";
+@import "variables";
+@import "mobile";
+
+@media (min-width: 768px) {
+  @import "tablet";
+}
+@media (min-width: 1260px) {
+  @import "desktop";
+}

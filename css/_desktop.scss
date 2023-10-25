@@ -1,27 +1,25 @@
-@media (min-width: 1260px) {
-  body {
-    .grid-menu-main {
-      gap: 16px;
-      max-width: 1600px;
-      header {
-        nav {
+@import "variables";
+
+body {
+  .grid-menu-main {
+    gap: 16px;
+    max-width: 1600px;
+    header {
+    }
+    main {
+      .home-section {
+        gap: 16px;
+
+        .home-text-top {
+          font-size: 2rem;
         }
-      }
-      main {
-        .home-section {
-          gap: 16px;
+        .home-image-container {
+          grid-column: 1 / span 6;
+        }
 
-          .home-text-top {
-            font-size: 2rem;
-          }
-          .home-image-container {
-            grid-column: 1 / span 6;
-          }
-
-          .home-text-bottom {
-            grid-column: 7 / span 6;
-            font-size: 2rem;
-          }
+        .home-text-bottom {
+          grid-column: 7 / span 6;
+          font-size: 2rem;
         }
       }
     }
