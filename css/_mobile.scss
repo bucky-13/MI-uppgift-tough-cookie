@@ -22,7 +22,7 @@ body {
   background-color: $color-client-yellow;
   font-family: $font-jockey-one;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   position: relative;
 
   .visually-hidden {
@@ -292,10 +292,14 @@ body {
           display: inline-block;
           font-family: "Courier New", Courier, monospace;
           font-size: 1.1rem;
+          height: 1rem;
           position: relative;
           bottom: 0.5rem;
           left: 1rem;
           margin-block: 0px;
+          span {
+            // padding-top: -2rem;
+          }
         }
 
         .new-dish {
@@ -356,10 +360,8 @@ body {
 
     .contact-container {
       width: 100%;
-      // max-width: 600px;
       aspect-ratio: 1 / 1;
       position: relative;
-      padding: 1rem;
 
       .contact-image {
         width: 100%;
