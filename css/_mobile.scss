@@ -350,13 +350,16 @@ body {
     padding-bottom: 200px;
     border-left: 1rem white solid;
     border-right: 1rem white solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     .contact-container {
-      width: calc(100% - 4rem);
+      width: 100%;
       // max-width: 600px;
       aspect-ratio: 1 / 1;
       position: relative;
-      padding: 2rem;
+      padding: 1rem;
 
       .contact-image {
         width: 100%;
@@ -377,6 +380,18 @@ body {
         text-align: left;
         font-size: 2rem;
         filter: drop-shadow(-2px -2px 1px black);
+        white-space: nowrap;
+        .contact-text-and-icon-align {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 12px;
+          .material-symbols-outlined {
+            font-size: 3rem;
+            font-weight: 900;
+            display: block;
+          }
+        }
       }
     }
     .booking-request-form {
