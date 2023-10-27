@@ -1,10 +1,8 @@
-@import url(variables);
-
 .btn {
   border: none;
   border-radius: 10px;
   padding: 3px 0;
-
+  text-transform: uppercase;
   font-size: 2rem;
 }
 
@@ -21,7 +19,6 @@
 body {
   background-color: $color-client-yellow;
   font-family: $font-jockey-one;
-  text-transform: uppercase;
   font-size: 1.2rem;
   position: relative;
 
@@ -53,7 +50,7 @@ body {
         color: white;
         margin: 0;
         font-weight: 500;
-
+        text-transform: uppercase;
         font-size: 3rem;
         line-height: 0rem;
         padding: 1rem;
@@ -95,6 +92,7 @@ body {
           color: white;
 
           font-size: 4rem;
+          text-transform: uppercase;
         }
       }
       .hamburger-btn {
@@ -151,7 +149,7 @@ body {
 
         .drizzle-h2 {
           font-weight: 900;
-
+          text-transform: uppercase;
           text-align: right;
           margin: 0;
           color: $color-client-purple;
@@ -218,7 +216,7 @@ body {
 
           .explore-menu-text {
             color: black;
-
+            text-transform: uppercase;
             font-size: 2rem;
           }
 
@@ -287,6 +285,7 @@ body {
       h3 {
         line-height: 1rem;
         font-weight: 500;
+        text-transform: uppercase;
         font-size: 2.3rem;
         margin: 1rem 0;
         padding-left: 1rem;
@@ -334,7 +333,6 @@ body {
       }
       .food-menu-item-description {
         font-family: $font-roboto-condesed;
-        text-transform: none;
         margin: 1.3rem 0;
         padding-left: 1rem;
       }
@@ -380,15 +378,12 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
         color: $color-client-blue;
-        text-transform: none;
         text-align: left;
         font-size: 2rem;
         filter: drop-shadow(-2px -2px 1px black);
         white-space: nowrap;
+
         .contact-text-and-icon-align {
-          // display: flex;
-          // flex-direction: row;
-          // align-items: center;
           display: grid;
           grid-template-columns: 50px 1fr;
           align-items: center;
@@ -423,6 +418,7 @@ body {
 
         h2 {
           font-size: 3rem;
+          text-transform: uppercase;
           font-weight: 500;
         }
 
@@ -440,7 +436,6 @@ body {
 
         .user-input {
           font-family: $font-roboto-condesed;
-          text-transform: none;
           padding: 6px;
           border: none;
           border-radius: 5px;

@@ -1,5 +1,3 @@
-@import "variables";
-
 body {
   .grid-menu-main {
     grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -84,6 +82,7 @@ body {
       .booking-request-container {
         align-self: self-end;
         padding-bottom: 1rem;
+        max-width: 500px;
       }
     }
   }

@@ -1,5 +1,3 @@
-@import "variables";
-
 body {
   overflow-x: hidden;
   .grid-menu-main {
@@ -121,6 +119,15 @@ body {
         width: calc(100% - 2rem);
         aspect-ratio: 10 / 6;
         max-width: 700px;
+      }
+      .contact-information {
+        font-size: 2.25rem;
+        .contact-text-and-icon-align {
+          grid-template-columns: 60px 1fr;
+          .material-symbols-outlined {
+            font-size: 4rem;
+          }
+        }
       }
       .booking-request-container {
         max-width: 615px;
