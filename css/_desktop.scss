@@ -3,21 +3,21 @@
 body {
   .grid-menu-main {
     grid-template-columns: repeat(12, minmax(0, 1fr));
-    gap: 16px;
     max-width: 1600px;
     header {
       grid-column: 1 / span 1;
       nav {
         .nav-menu-open {
           top: 0;
-          left: calc(8.333vw - 16px);
+          // left: calc(8.333vw - 16px);
+          left: calc(100vw / 12 - 2px);
           width: calc(91.667vw + 16px);
         }
         @media (min-width: 1600px) {
           .nav-menu-open {
             top: 0;
-            left: 118.7px;
-            width: calc(100vw + 118.7px);
+            left: 133.33px;
+            width: calc(100vw - 133.3px);
           }
         }
       }
