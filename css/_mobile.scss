@@ -386,14 +386,25 @@ body {
         filter: drop-shadow(-2px -2px 1px black);
         white-space: nowrap;
         .contact-text-and-icon-align {
-          display: flex;
-          flex-direction: row;
+          // display: flex;
+          // flex-direction: row;
+          // align-items: center;
+          display: grid;
+          grid-template-columns: 50px 1fr;
           align-items: center;
+          line-height: 1rem;
           gap: 12px;
+          .address-container {
+            line-height: 0.5rem;
+          }
           .material-symbols-outlined {
-            font-size: 3rem;
+            font-size: 3.5rem;
             font-weight: 900;
             display: block;
+          }
+          .empty-span {
+            display: block;
+            width: 48px;
           }
         }
       }
