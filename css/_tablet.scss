@@ -20,7 +20,7 @@ body {
           order: 1;
           padding: 0;
         }
-        .nav-menu-open {
+        .nav-links-open {
           top: 0;
           left: calc(100vw / 6 - 3px);
           width: calc(83.333vw);
@@ -71,7 +71,7 @@ body {
       }
     }
 
-    .menu-section {
+    .food-menu-section {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       align-content: start;
@@ -91,7 +91,7 @@ body {
       :nth-child(9) {
         order: 5;
       }
-      .menu-item {
+      .food-menu-item {
         grid-column: 1 / span 3;
         margin: 0;
         display: grid;
@@ -106,7 +106,7 @@ body {
             margin-top: -1rem;
           }
         }
-        .menu-item-description {
+        .food-menu-item-description {
           margin: 0.5rem 0;
         }
         figure {

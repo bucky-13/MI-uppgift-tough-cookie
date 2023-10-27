@@ -59,12 +59,12 @@ body {
         padding: 1rem;
       }
 
-      .nav-menu {
+      .nav-links {
         display: none;
         opacity: 0;
         visibility: hidden;
       }
-      .nav-menu-open {
+      .nav-links-open {
         background-color: $color-client-purple;
         height: 100vh;
         width: 100vw;
@@ -229,7 +229,7 @@ body {
       }
     }
   }
-  .menu-section {
+  .food-menu-section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -275,7 +275,7 @@ body {
       }
     }
 
-    .menu-item {
+    .food-menu-item {
       background-color: white;
       border-top: 2px solid black;
       border-bottom: 2px solid black;
@@ -299,9 +299,6 @@ body {
           bottom: 0.5rem;
           left: 1rem;
           margin-block: 0px;
-          span {
-            // padding-top: -2rem;
-          }
         }
 
         .new-dish {
@@ -335,13 +332,13 @@ body {
           }
         }
       }
-      .menu-item-description {
+      .food-menu-item-description {
         font-family: $font-roboto-condesed;
         text-transform: none;
         margin: 1.3rem 0;
         padding-left: 1rem;
       }
-      .menu-item-price {
+      .food-menu-item-price {
         line-height: 1rem;
         text-align: right;
         font-size: 2.3rem;

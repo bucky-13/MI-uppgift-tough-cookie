@@ -1,11 +1,11 @@
 const hamburgerBtn = document.querySelector("#hamburger-btn");
-const navMenu = document.querySelector(".nav-menu");
+const navLinks = document.querySelector(".nav-links");
 const cookiesYes = document.querySelector("#cookies-yes");
 const cookiesNo = document.querySelector("#cookies-no");
 const footer = document.querySelector("footer");
 
 hamburgerBtn.addEventListener("click", () => {
-  navMenu.classList.toggle("nav-menu-open");
+  navLinks.classList.toggle("nav-links-open");
   hamburgerBtn.classList.toggle("active");
 });
 
