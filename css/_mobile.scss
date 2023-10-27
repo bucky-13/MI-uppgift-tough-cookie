@@ -281,13 +281,15 @@ body {
       border-bottom: 2px solid black;
       width: calc(100% - 2rem);
       margin-bottom: 1rem;
-      padding: 0 1rem;
+      width: 100%;
+      // padding: 0 1rem;
 
       h3 {
         line-height: 1rem;
         font-weight: 500;
         font-size: 2.3rem;
         margin: 1rem 0;
+        padding-left: 1rem;
         div {
           display: inline-block;
           font-family: "Courier New", Courier, monospace;
@@ -337,12 +339,14 @@ body {
         font-family: $font-roboto-condesed;
         text-transform: none;
         margin: 1.3rem 0;
+        padding-left: 1rem;
       }
       .menu-item-price {
         line-height: 1rem;
         text-align: right;
         font-size: 2.3rem;
         margin: 1rem 0;
+        padding-right: 1rem;
       }
     }
   }
