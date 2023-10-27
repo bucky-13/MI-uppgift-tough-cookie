@@ -69,5 +69,22 @@ body {
         }
       }
     }
+    .book-table-section {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      align-content: center;
+
+      .contact-container {
+        aspect-ratio: 1 / 1;
+        order: 1;
+        // justify-self: center;
+        max-width: 615px;
+      }
+
+      .booking-request-container {
+        align-self: self-end;
+        padding-bottom: 1rem;
+      }
+    }
   }
 }
