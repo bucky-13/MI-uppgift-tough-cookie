@@ -51,7 +51,7 @@ body {
         margin: 0;
         font-weight: 500;
         text-transform: uppercase;
-        font-size: 3rem;
+        font-size: 2.5rem;
         line-height: 0rem;
         padding: 1rem;
       }
@@ -63,7 +63,7 @@ body {
       }
       .nav-links-open {
         background-color: $color-client-purple;
-        height: 100vh;
+        height: calc(100vh - 100px);
         width: 100vw;
         position: absolute;
         top: 100px;
@@ -91,7 +91,7 @@ body {
           text-decoration: none;
           color: white;
 
-          font-size: 4rem;
+          font-size: 3rem;
           text-transform: uppercase;
         }
       }
@@ -99,6 +99,7 @@ body {
         background-color: black;
         border: none;
         padding: 1rem;
+        margin: auto 1rem;
 
         .bar {
           display: block;
@@ -283,12 +284,19 @@ body {
       // padding: 0 1rem;
 
       h3 {
-        line-height: 1rem;
+        line-height: 3rem;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
         font-weight: 500;
         text-transform: uppercase;
-        font-size: 2.3rem;
-        margin: 1rem 0;
+        font-size: 1.8rem;
+        // margin: 1rem 0;
         padding-left: 1rem;
+        span {
+          margin-top: -1rem;
+          margin-right: 1rem;
+          margin-left: 1rem;
+        }
         div {
           display: inline-block;
           font-family: "Courier New", Courier, monospace;
@@ -302,7 +310,7 @@ body {
 
         .new-dish {
           background-color: $color-client-purple;
-          padding: 2px 16px;
+          padding: 2px 0px;
           transform: rotate(2deg);
           margin: 0 auto;
           span {
@@ -312,7 +320,7 @@ body {
         }
         .vegan-dish {
           background-color: $color-client-green;
-          padding: 2px 12px;
+          padding: 2px 0px;
           transform: rotate(-4deg);
           margin: 0 auto;
           span {
@@ -322,7 +330,7 @@ body {
         }
         .popular-dish {
           background-color: $color-client-yellow;
-          padding: 1px 4px;
+          padding: 1px 0px;
           transform: rotate(-1deg);
           margin: 0 auto;
           span {
@@ -379,13 +387,13 @@ body {
         transform: translate(-50%, -50%);
         color: $color-client-blue;
         text-align: left;
-        font-size: 2rem;
+        font-size: 1.5rem;
         filter: drop-shadow(-2px -2px 1px black);
         white-space: nowrap;
 
         .contact-text-and-icon-align {
           display: grid;
-          grid-template-columns: 50px 1fr;
+          grid-template-columns: 40px 1fr;
           align-items: center;
           line-height: 1rem;
           gap: 12px;
@@ -393,13 +401,9 @@ body {
             line-height: 0.5rem;
           }
           .material-symbols-outlined {
-            font-size: 3.5rem;
+            font-size: 2.5rem;
             font-weight: 900;
             display: block;
-          }
-          .empty-span {
-            display: block;
-            width: 48px;
           }
         }
       }
@@ -417,13 +421,13 @@ body {
         padding: 0 1rem;
 
         h2 {
-          font-size: 3rem;
+          font-size: 2.5rem;
           text-transform: uppercase;
           font-weight: 500;
         }
 
         label span {
-          font-size: 1.8rem;
+          font-size: 1.4rem;
         }
 
         label {
