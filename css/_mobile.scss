@@ -97,7 +97,7 @@ body {
           font-size: 4rem;
         }
       }
-      #hamburger-btn {
+      .hamburger-btn {
         background-color: black;
         border: none;
         padding: 1rem;
@@ -113,17 +113,17 @@ body {
         }
       }
 
-      #hamburger-btn.active .bar:nth-child(2) {
+      .hamburger-btn.active .bar:nth-child(2) {
         opacity: 0;
       }
-      #hamburger-btn.active .bar:nth-child(1) {
+      .hamburger-btn.active .bar:nth-child(1) {
         transform: translateY(16px) rotate(45deg);
       }
-      #hamburger-btn.active .bar:nth-child(3) {
+      .hamburger-btn.active .bar:nth-child(3) {
         transform: translateY(-16px) rotate(-45deg);
       }
 
-      #hamburger-btn:hover span {
+      .hamburger-btn:hover span {
         background-color: white;
       }
     }
