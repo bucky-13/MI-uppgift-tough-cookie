@@ -3,7 +3,6 @@ body {
   .grid-menu-main {
     display: grid;
     grid-template-columns: repeat(6, minmax(0, 1fr));
-    // gap: 12px;
 
     header {
       height: 100vh;
@@ -23,8 +22,6 @@ body {
           top: 0;
           left: calc(100vw / 6 - 3px);
           width: calc(83.333vw);
-          // left: calc(16.667vw - 16px);
-          // width: calc(83.333vw + 16px);
         }
       }
     }
@@ -51,7 +48,6 @@ body {
         .home-text-top {
           grid-column: 6 / span 7;
           padding: 0 1rem;
-          // font-size: 2rem;
         }
 
         .home-image-container {
@@ -65,7 +61,6 @@ body {
         .home-text-bottom {
           grid-column: 6 / span 7;
           padding: 0 1rem;
-          // font-size: 2rem;
         }
       }
     }

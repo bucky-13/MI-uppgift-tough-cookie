@@ -7,7 +7,6 @@ body {
       nav {
         .nav-links-open {
           top: 0;
-          // left: calc(8.333vw - 16px);
           left: calc(100vw / 12 - 2px);
           width: calc(91.667vw + 16px);
         }
@@ -25,6 +24,10 @@ body {
       .home-section {
         gap: 16px;
 
+        .drizzle-container {
+          padding-right: 2rem;
+        }
+
         .home-text-top {
           font-size: 2rem;
         }
@@ -35,6 +38,9 @@ body {
         .home-text-bottom {
           grid-column: 7 / span 6;
           font-size: 2rem;
+          .explore-menu-section {
+            margin-top: -1.85em;
+          }
         }
       }
     }
@@ -75,14 +81,14 @@ body {
       .contact-container {
         aspect-ratio: 1 / 1;
         order: 1;
-        // justify-self: center;
+        justify-self: center;
         max-width: 615px;
       }
 
       .booking-request-container {
         align-self: self-end;
+        justify-self: center;
         padding-bottom: 1rem;
-        max-width: 500px;
       }
     }
   }
