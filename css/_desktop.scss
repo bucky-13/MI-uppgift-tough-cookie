@@ -26,17 +26,19 @@ body {
 
         .drizzle-container {
           padding-right: 2rem;
+          grid-column: 1 / span 4;
         }
 
         .home-text-top {
           font-size: 2rem;
+          grid-column: 5 / span 7;
         }
         .home-image-container {
-          grid-column: 1 / span 6;
+          grid-column: 1 / span 5;
         }
 
         .home-text-bottom {
-          grid-column: 7 / span 6;
+          grid-column: 6 / span 6;
           font-size: 2rem;
           .explore-menu-section {
             margin-top: -1.85em;
