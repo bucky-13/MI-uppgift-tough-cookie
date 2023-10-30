@@ -281,6 +281,10 @@ body {
       width: calc(100% - 2rem);
       margin-bottom: 1rem;
       width: 100%;
+      display: grid;
+      grid-template-rows: auto auto;
+      grid-template-columns: 1fr 105px;
+      grid-auto-flow: column;
       .food-item-name {
         text-transform: uppercase;
         display: inline;
@@ -345,13 +349,16 @@ body {
 
       .food-menu-item-description {
         font-family: $font-roboto-condesed;
-        margin: 1.3rem 0;
+        // margin: 1.3rem 0;
+        // margin: -0.3rem 0;
         padding-left: 1rem;
+        margin-block-start: 0;
+        // margin-block-end: 0;
       }
       .food-menu-item-price {
         line-height: 1rem;
         text-align: right;
-        font-size: 2.3rem;
+        font-size: 1.8rem;
         margin: 1rem 0;
         padding-right: 1rem;
       }
