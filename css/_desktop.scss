@@ -64,7 +64,7 @@ body {
         gap: 16px;
         padding: 0;
 
-        h3 {
+        .food-item-name {
           grid-column: 1 / span 4;
         }
         .food-menu-item-description {

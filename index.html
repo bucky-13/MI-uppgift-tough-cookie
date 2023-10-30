@@ -3,6 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Tough Cookie Restaurant" />
+    <meta
+      property="og:description"
+      content="Welcome to Tough Cookie Restaurant, browse our menu and book a table."
+    />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?auto=format&fit=crop&q=80&w=1964&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    />
     <title>Tough Cookie Restaurant</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -69,6 +78,7 @@
               src="/assets/icons/arrow.svg"
               height="59"
               width="72"
+              alt=""
             />
           </div>
 
@@ -86,6 +96,7 @@
                 src="/assets/icons/arrow2.svg"
                 height="25"
                 width="25"
+                alt=""
               />
             </div>
           </article>
@@ -118,56 +129,62 @@
             />
           </figure>
           <div class="food-menu-item">
-            <h3>
-              Halloumi Moklieh
+            <div class="food-item-name">
+              <h3>Halloumi Moklieh</h3>
               <div class="new-dish"><span>New!</span></div>
-            </h3>
+            </div>
+
             <p class="food-menu-item-description">Deep-fried halloumi</p>
             <p class="food-menu-item-price">195 kr</p>
           </div>
           <div class="food-menu-item">
-            <h3>Mojaddara</h3>
+            <div class="food-item-name"><h3>Mojaddara</h3></div>
             <p class="food-menu-item-description">
               Green lentis with rice and fried onion
             </p>
             <p class="food-menu-item-price">135 kr</p>
           </div>
           <div class="food-menu-item">
-            <h3>Chiar & Laban</h3>
+            <div class="food-item-name"><h3>Chiar & Laban</h3></div>
+
             <p class="food-menu-item-description">
               Lebanese spicy yoghurt with chopped cucumber
             </p>
             <p class="food-menu-item-price">95 kr</p>
           </div>
           <div class="food-menu-item">
-            <h3>Warak Inab</h3>
+            <div class="food-item-name"><h3>Warak Inab</h3></div>
+
             <p class="food-menu-item-description">
               Rice- and veggie-filled dolma with mint and lemon
             </p>
             <p class="food-menu-item-price">85 kr</p>
           </div>
           <div class="food-menu-item">
-            <h3>
-              Moutabbal Batinzian
+            <div class="food-item-name">
+              <h3>Moutabbal Batinzian</h3>
               <div class="vegan-dish"><span>Vegan</span></div>
-            </h3>
+            </div>
+
             <p class="food-menu-item-description">
               Smoked chopped aubergine, sesame paste, garlic and lemon
             </p>
             <p class="food-menu-item-price">175 kr</p>
           </div>
           <div class="food-menu-item">
-            <h3>
-              Ardishoki
+            <div class="food-item-name">
+              <h3>Ardishoki</h3>
               <div class="popular-dish"><span>Popular</span></div>
-            </h3>
+            </div>
+
             <p class="food-menu-item-description">
               Artichoke with lemon and garlic marinade
             </p>
             <p class="food-menu-item-price">99 kr</p>
           </div>
           <div class="food-menu-item">
-            <h3>Mhamara</h3>
+            <div class="food-item-name"><h3>Mhamara</h3></div>
+
             <p class="food-menu-item-description">
               Spicy bell pepper relish with crushed walnuts and pomegranate
               syrup
@@ -177,6 +194,7 @@
         </section>
         <!-- ******************************BOOKING SECTION************************************* -->
         <section id="book-table-section-anchor" class="book-table-section">
+          <h2 class="visually-hidden">Book Table & Contact</h2>
           <article class="contact-container">
             <div class="contact-image"></div>
             <div class="contact-information">
