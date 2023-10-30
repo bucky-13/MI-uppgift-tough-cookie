@@ -2,7 +2,7 @@ const hamburgerBtn = document.querySelector("#hamburger-btn");
 const navLinks = document.querySelector(".nav-links");
 const cookiesYes = document.querySelector("#cookies-yes");
 const cookiesNo = document.querySelector("#cookies-no");
-const footer = document.querySelector("footer");
+const cookieWindow = document.querySelector(".cookie-window");
 
 hamburgerBtn.addEventListener("click", () => {
   navLinks.classList.toggle("nav-links-open");
@@ -10,9 +10,9 @@ hamburgerBtn.addEventListener("click", () => {
 });
 
 cookiesNo.addEventListener("click", () => {
-  footer.classList.toggle("footer-closed");
+  cookieWindow.classList.toggle("cookie-window-closed");
 });
 cookiesYes.addEventListener("click", () => {
-  footer.classList.toggle("footer-closed");
+  cookieWindow.classList.toggle("cookie-window-closed");
   console.log("Now that's a Tough Cookie :-)");
 });

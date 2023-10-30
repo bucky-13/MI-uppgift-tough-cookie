@@ -142,4 +142,17 @@ body {
       }
     }
   }
+  .cookie-window {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    align-content: center;
+    height: 110px;
+    p {
+      padding-top: 0;
+      font-size: 1.3rem;
+    }
+    div {
+      padding-bottom: 0;
+    }
+  }
 }
