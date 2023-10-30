@@ -15,7 +15,10 @@ body {
           writing-mode: vertical-lr;
           text-orientation: upright;
           order: 1;
-          padding: 0;
+
+          vertical-align: middle;
+
+          letter-spacing: -0.3rem;
         }
         .nav-links-open {
           height: 100vh;
