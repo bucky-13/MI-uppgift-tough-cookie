@@ -3,3 +3,8 @@
   opacity: 0;
   visibility: hidden;
 }
+
+@mixin flexCenterAlign {
+  display: flex;
+  align-items: center;
+}

@@ -34,7 +34,7 @@ body {
     white-space: nowrap;
     width: 1px;
   }
-
+  // *****************************NAVBAR SECTION***************************************
   header {
     background-color: black;
     height: 100px;
@@ -43,8 +43,7 @@ body {
     z-index: 2;
 
     nav {
-      display: flex;
-      align-items: center;
+      @include flexCenterAlign;
       flex-wrap: wrap;
       justify-content: space-between;
       background-color: black;
@@ -68,11 +67,10 @@ body {
         width: 100vw;
         position: absolute;
         top: 100px;
-        display: flex;
+        @include flexCenterAlign;
         list-style: none;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
         z-index: 2;
         margin: 0;
         padding-inline-start: 0;
@@ -124,16 +122,16 @@ body {
   }
 
   main {
-    display: flex;
+    @include flexCenterAlign;
     flex-direction: column;
-    align-items: center;
+
+    // *****************************HOME SECTION***************************************
 
     .home-section {
       background-color: black;
-      display: flex;
+      @include flexCenterAlign;
       flex-direction: column;
       justify-content: space-between;
-      align-items: center;
       border-left: $border-yellow;
       border-right: $border-yellow;
       min-height: calc(100vh - 80px);
@@ -179,7 +177,6 @@ body {
 
       .home-image-container {
         width: 100%;
-
         position: relative;
         background-image: url("/assets/photos/green-cabbage-vegetable.jpg");
         background-size: cover;
@@ -204,9 +201,8 @@ body {
         padding: 0 2rem;
 
         .explore-menu-section {
-          display: flex;
+          @include flexCenterAlign;
           flex-direction: row;
-          align-items: center;
           margin-top: -2.1em;
 
           .explore-menu-text {
@@ -222,11 +218,13 @@ body {
       }
     }
   }
+
+  // *****************************FOOD-MENU SECTION***************************************
+
   .food-menu-section {
-    display: flex;
+    @include flexCenterAlign;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     border-left: $border-yellow;
     border-right: $border-yellow;
     min-height: calc(100vh - 80px);
@@ -343,11 +341,8 @@ body {
 
       .food-menu-item-description {
         font-family: $font-roboto-condesed;
-        // margin: 1.3rem 0;
-        // margin: -0.3rem 0;
         padding-left: 1rem;
         margin-block-start: 0;
-        // margin-block-end: 0;
       }
       .food-menu-item-price {
         line-height: 1rem;
@@ -359,6 +354,8 @@ body {
     }
   }
 
+  // *****************************BOOK-TABLE SECTION***************************************
+
   .book-table-section {
     min-height: 100vh;
     width: calc(100% - 2rem);
@@ -366,9 +363,8 @@ body {
     padding-bottom: 50px;
     border-left: 1rem white solid;
     border-right: 1rem white solid;
-    display: flex;
+    @include flexCenterAlign;
     flex-direction: column;
-    align-items: center;
 
     .contact-container {
       width: 100%;
@@ -391,7 +387,6 @@ body {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        // color: $color-client-blue;
         text-align: left;
         font-size: 1.5rem;
         filter: drop-shadow(-2px -2px 1px black);
@@ -422,7 +417,6 @@ body {
         flex-direction: column;
         justify-content: space-between;
         margin: 0;
-
         padding: 0 1rem;
 
         h2 {
@@ -460,6 +454,8 @@ body {
       }
     }
   }
+
+  // *****************************COOKIE SECTION***************************************
 
   .cookie-window {
     position: fixed;

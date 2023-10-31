@@ -2,6 +2,9 @@ body {
   .grid-menu-main {
     grid-template-columns: repeat(12, minmax(0, 1fr));
     max-width: 1600px;
+
+    // *****************************NAVBAR SECTION***************************************
+
     header {
       grid-column: 1 / span 1;
       nav {
@@ -21,6 +24,9 @@ body {
     }
     main {
       grid-column: 2 / span 11;
+
+      // *****************************HOME SECTION***************************************
+
       .home-section {
         gap: 16px;
 
@@ -46,6 +52,9 @@ body {
         }
       }
     }
+
+    // *****************************FOOD-MENU SECTION***************************************
+
     .food-menu-section {
       grid-template-columns: repeat(11, minmax(0, 1fr));
 
@@ -79,6 +88,9 @@ body {
         }
       }
     }
+
+    // *****************************BOOK-TABLE SECTION***************************************
+
     .book-table-section {
       display: grid;
       grid-template-columns: 50% 50%;
