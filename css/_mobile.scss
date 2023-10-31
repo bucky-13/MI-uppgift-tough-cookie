@@ -16,6 +16,10 @@
   background-color: $color-client-green;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   background-color: $color-client-yellow;
   font-family: $font-jockey-one;
@@ -82,14 +86,8 @@ body {
           transition: margin-left 0.5s;
         }
 
-        // li:hover {
-        //   margin-left: 1rem;
-        // }
-
         a {
-          text-decoration: none;
           color: white;
-
           font-size: 3rem;
           text-transform: uppercase;
         }
@@ -387,13 +385,15 @@ body {
         background-position: center;
         filter: blur(3px) brightness(1.2);
       }
-
+      a {
+        color: $color-client-blue;
+      }
       .contact-information {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: $color-client-blue;
+        // color: $color-client-blue;
         text-align: left;
         font-size: 1.5rem;
         filter: drop-shadow(-2px -2px 1px black);
