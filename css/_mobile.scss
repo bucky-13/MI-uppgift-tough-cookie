@@ -367,7 +367,10 @@ body {
     flex-direction: column;
 
     .contact-container {
-      width: 100%;
+      margin: 1rem;
+      width: calc(100% - 2rem);
+      max-width: 600px;
+
       aspect-ratio: 1 / 1;
       position: relative;
 
@@ -411,6 +414,7 @@ body {
     }
     .booking-request-container {
       width: 100%;
+      max-width: 600px;
 
       .booking-request-form {
         display: flex;
