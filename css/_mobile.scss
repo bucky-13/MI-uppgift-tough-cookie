@@ -178,7 +178,7 @@ body {
       .home-image-container {
         width: 100%;
         position: relative;
-        background-image: url("/assets/photos/green-cabbage-vegetable.jpg");
+        background-image: url("../assets/photos/green-cabbage-vegetable.jpg");
         background-size: cover;
         background-position: center;
         aspect-ratio: 1 / 1;
@@ -377,7 +377,7 @@ body {
       .contact-image {
         width: 100%;
         height: 100%;
-        background-image: url("/assets/photos/tough-cookie-restaurant.jpg");
+        background-image: url("../assets/photos/tough-cookie-restaurant.jpg");
         background-size: cover;
         background-position: center;
         filter: blur(3px) brightness(1.2);
