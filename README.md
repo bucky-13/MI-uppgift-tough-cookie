@@ -4,7 +4,7 @@
 
 ## Description:
 
-Medieinstitutet Assignment for HTML/CSS course. The task was to create a  webside for a restaurant using HTML, CSS & Sass.
+Medieinstitutet Assignment for HTML/CSS course. The task was to create a  website for a restaurant according to a design provided by the teacher using HTML, CSS & Sass.
 
 The site displays an welcome page, the food menu, a form for booking tables and contact information.
 
